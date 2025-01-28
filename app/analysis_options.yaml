@@ -1,0 +1,11 @@
+# include: package:flutter_lints/flutter.yaml
+# https://pub.dev/packages/pedantic_mono
+include: package:pedantic_mono/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - '**/*.g.dart'
+
+linter:
+  rules:
+    avoid_redundant_argument_values: false

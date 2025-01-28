@@ -1,0 +1,41 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "genkit:start": "genkit start -- tsx --watch src/genkit-sample.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "emulator": "firebase emulators:start --only functions",
+    "dev": "concurrently \"npm run build:watch\" \"npm run emulator\"",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "lint": "biome lint ./src/",
+    "format": "biome format --write ./src/",
+    "check": "biome check --write ./src/",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "name": "functions",
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "@genkit-ai/firebase": "^0.9.12",
+    "@genkit-ai/vertexai": "^0.9.12",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "genkit": "^0.9.12",
+    "hono": "^4.6.14",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "concurrently": "^9.1.0",
+    "firebase-functions-test": "^3.1.0",
+    "genkit-cli": "^0.9.12",
+    "tsx": "^4.19.2",
+    "typescript": "^4.9.5"
+  },
+  "private": true
+}

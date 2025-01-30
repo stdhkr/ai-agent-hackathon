@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:chat_app/features/auth/application/auth_state_changes_provider.dart';
-import 'package:chat_app/features/auth/data/repositories/app_user_repository_provider.dart';
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
+import 'package:goronyan/features/auth/application/auth_state_changes_provider.dart';
+import 'package:goronyan/features/auth/data/repositories/app_user_repository_provider.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

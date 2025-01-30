@@ -1,6 +1,6 @@
-import 'package:chat_app/config/environment/firebase_options_dev.dart' as dev;
-import 'package:chat_app/config/environment/firebase_options_prod.dart' as prod;
 import 'package:firebase_core/firebase_core.dart';
+import 'package:goronyan/config/environment/firebase_options_dev.dart' as dev;
+import 'package:goronyan/config/environment/firebase_options_prod.dart' as prod;
 
 Future<void> initializeFirebaseApp() async {
   const flavor = String.fromEnvironment('flavor');

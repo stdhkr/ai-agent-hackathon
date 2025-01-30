@@ -1,14 +1,15 @@
 import 'dart:io';
 
-import 'package:chat_app/config/providers/firebase_providers.dart';
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/data/logger/logger.dart';
-import 'package:chat_app/core/extensions/ref_extentions.dart';
-import 'package:chat_app/features/generate/domain/entities/mnemonic_response.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:goronyan/config/providers/firebase_providers.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
+import 'package:goronyan/core/extensions//firestore_extensions.dart';
+import 'package:goronyan/core/extensions/ref_extentions.dart';
+import 'package:goronyan/features/generate/domain/entities/mnemonic_response.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

@@ -1,13 +1,13 @@
-import 'package:chat_app/config/router/router.dart';
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/widgets/bars/custom_divider.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/core/presentation/widgets/cards/custom_list_tile.dart';
-import 'package:chat_app/features/auth/application/app_user_provider.dart';
-import 'package:chat_app/features/auth/application/combined_auth_provider.dart';
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/router/router.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/widgets/bars/custom_divider.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/core/presentation/widgets/cards/custom_list_tile.dart';
+import 'package:goronyan/features/auth/application/app_user_provider.dart';
+import 'package:goronyan/features/auth/application/combined_auth_provider.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class SettingsPage extends ConsumerWidget {

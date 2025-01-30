@@ -1,5 +1,5 @@
-import 'package:chat_app/core/constants/constants.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:goronyan/core/constants/constants.dart';
 
 part 'app_user_form_state.freezed.dart';
 

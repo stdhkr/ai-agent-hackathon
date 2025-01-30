@@ -1,7 +1,7 @@
-import 'package:chat_app/core/presentation/widgets/offsets/offset_icon_svg.dart';
-import 'package:chat_app/features/generate/presentation/widgets/show_voice_input_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offset_icon_svg.dart';
+import 'package:goronyan/features/generate/presentation/widgets/show_voice_input_bottom_sheet.dart';
 
 class AssetWithLabel {
   const AssetWithLabel({

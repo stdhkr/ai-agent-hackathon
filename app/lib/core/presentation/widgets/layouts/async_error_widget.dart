@@ -1,6 +1,6 @@
-import 'package:chat_app/config/router/router.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offset_button.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/router/router.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offset_button.dart';
 
 class AsyncErrorWidget extends StatelessWidget {
   const AsyncErrorWidget({

@@ -1,15 +1,15 @@
-import 'package:chat_app/config/router/app_routes.dart';
-import 'package:chat_app/config/router/branches/shell_route.dart';
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/quiz/application/quiz_play_provider.dart';
-import 'package:chat_app/features/quiz/application/quiz_play_state.dart';
-import 'package:chat_app/features/quiz/presentation/widgets/flashcard.dart';
-import 'package:chat_app/features/quiz/presentation/widgets/status_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:goronyan/config/router/app_routes.dart';
+import 'package:goronyan/config/router/branches/shell_route.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/quiz/application/quiz_play_provider.dart';
+import 'package:goronyan/features/quiz/application/quiz_play_state.dart';
+import 'package:goronyan/features/quiz/presentation/widgets/flashcard.dart';
+import 'package:goronyan/features/quiz/presentation/widgets/status_content.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class QuizPlayPage extends HookConsumerWidget {

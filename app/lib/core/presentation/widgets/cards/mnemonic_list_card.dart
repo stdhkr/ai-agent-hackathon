@@ -1,8 +1,8 @@
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/extensions/color_extensions.dart';
-import 'package:chat_app/core/presentation/widgets/bars/custom_divider.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/extensions/color_extensions.dart';
+import 'package:goronyan/core/presentation/widgets/bars/custom_divider.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MnemonicListCard extends ConsumerWidget {

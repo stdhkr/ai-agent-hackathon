@@ -1,6 +1,6 @@
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 
 part 'home_state.freezed.dart';
 

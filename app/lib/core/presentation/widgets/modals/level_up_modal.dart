@@ -1,5 +1,5 @@
-import 'package:chat_app/core/presentation/widgets/clippers/rounded_hexagon_clipper.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/presentation/widgets/clippers/rounded_hexagon_clipper.dart';
 
 class LevelUpModal extends StatelessWidget {
   const LevelUpModal({

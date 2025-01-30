@@ -1,7 +1,7 @@
-import 'package:chat_app/config/environment/firebase_initializer.dart';
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/data/logger/logger.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/environment/firebase_initializer.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 

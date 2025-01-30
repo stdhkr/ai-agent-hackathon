@@ -1,13 +1,13 @@
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/dialogs/auto_dismiss_dialog.dart';
-import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/core/presentation/widgets/indicators/cat_level_slider.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/profile/application/edit_cat_level_provider.dart';
-import 'package:chat_app/features/profile/application/edit_cat_level_state.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/dialogs/auto_dismiss_dialog.dart';
+import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/core/presentation/widgets/indicators/cat_level_slider.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/profile/application/edit_cat_level_provider.dart';
+import 'package:goronyan/features/profile/application/edit_cat_level_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class EditCatLevelPage extends ConsumerWidget {

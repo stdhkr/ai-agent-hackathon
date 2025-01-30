@@ -1,5 +1,5 @@
-import 'package:chat_app/core/extensions/color_extensions.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/extensions/color_extensions.dart';
 
 class RecordingEffect extends StatelessWidget {
   const RecordingEffect({

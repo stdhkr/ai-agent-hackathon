@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:chat_app/core/data/logger/logger.dart';
-import 'package:chat_app/features/auth/application/auth_state_changes_provider.dart';
-import 'package:chat_app/features/auth/application/combined_auth_state.dart';
-import 'package:chat_app/features/auth/data/repositories/app_user_repository_provider.dart';
-import 'package:chat_app/features/auth/data/repositories/auth_repository_provider.dart';
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
+import 'package:goronyan/features/auth/application/auth_state_changes_provider.dart';
+import 'package:goronyan/features/auth/application/combined_auth_state.dart';
+import 'package:goronyan/features/auth/data/repositories/app_user_repository_provider.dart';
+import 'package:goronyan/features/auth/data/repositories/auth_repository_provider.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'combined_auth_provider.g.dart';

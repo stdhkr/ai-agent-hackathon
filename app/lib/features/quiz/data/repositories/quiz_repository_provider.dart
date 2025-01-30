@@ -1,7 +1,7 @@
-import 'package:chat_app/config/providers/firebase_providers.dart';
-import 'package:chat_app/features/quiz/application/quiz_play_state.dart';
-import 'package:chat_app/features/quiz/domain/entities/quiz_log.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:goronyan/config/providers/firebase_providers.dart';
+import 'package:goronyan/features/quiz/application/quiz_play_state.dart';
+import 'package:goronyan/features/quiz/domain/entities/quiz_log.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

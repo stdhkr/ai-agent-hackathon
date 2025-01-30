@@ -1,7 +1,7 @@
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offset_icon_svg.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offset_icon_svg.dart';
 
 final _icons = [
   'assets/images/laugh.svg',

@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:chat_app/config/providers/firebase_providers.dart';
-import 'package:chat_app/core/data/logger/logger.dart';
-import 'package:chat_app/features/auth/application/app_user_provider.dart';
-import 'package:chat_app/features/generate/application/voice_input_state.dart';
-import 'package:chat_app/features/generate/data/repositories/generate_repository_provider.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
+import 'package:goronyan/config/providers/firebase_providers.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
+import 'package:goronyan/features/auth/application/app_user_provider.dart';
+import 'package:goronyan/features/generate/application/voice_input_state.dart';
+import 'package:goronyan/features/generate/data/repositories/generate_repository_provider.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:record/record.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';

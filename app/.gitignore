@@ -57,5 +57,5 @@ app.*.map.json
 # ios/firebase_app_id_file.json
 
 # Firebase
-ios/firebase/
-android/app/src/firebase/
+# ios/firebase/
+# android/app/src/firebase/

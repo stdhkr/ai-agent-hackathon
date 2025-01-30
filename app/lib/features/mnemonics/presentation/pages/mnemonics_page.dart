@@ -1,10 +1,10 @@
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/widgets/bars/sliver_tab_bar.dart';
-import 'package:chat_app/core/presentation/widgets/bars/sticky_bar_delegate.dart';
-import 'package:chat_app/features/mnemonics/application/mnemonics_state.dart';
-import 'package:chat_app/features/mnemonics/presentation/widgets/mnemonics_tab_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/widgets/bars/sliver_tab_bar.dart';
+import 'package:goronyan/core/presentation/widgets/bars/sticky_bar_delegate.dart';
+import 'package:goronyan/features/mnemonics/application/mnemonics_state.dart';
+import 'package:goronyan/features/mnemonics/presentation/widgets/mnemonics_tab_view.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 const tabs = [

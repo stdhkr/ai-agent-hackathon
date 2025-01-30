@@ -1,9 +1,9 @@
-import 'package:chat_app/features/home/presentation/pages/home_page.dart';
-import 'package:chat_app/features/mnemonics/presentation/pages/mnemonics_page.dart';
-import 'package:chat_app/features/quiz/presentation/pages/quiz_page.dart';
-import 'package:chat_app/features/settings/presentation/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:goronyan/features/home/presentation/pages/home_page.dart';
+import 'package:goronyan/features/mnemonics/presentation/pages/mnemonics_page.dart';
+import 'package:goronyan/features/quiz/presentation/pages/quiz_page.dart';
+import 'package:goronyan/features/settings/presentation/pages/settings_page.dart';
 
 class HomeBranchData extends StatefulShellBranchData {
   const HomeBranchData();

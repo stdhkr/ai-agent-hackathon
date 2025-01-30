@@ -1,12 +1,12 @@
-import 'package:chat_app/config/router/router.dart';
-import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/core/presentation/widgets/cards/custom_switch_list_tile.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/auth/application/combined_auth_provider.dart';
-import 'package:chat_app/features/auth/application/combined_auth_state.dart';
-import 'package:chat_app/features/quiz/application/quiz_state_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/router/router.dart';
+import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/core/presentation/widgets/cards/custom_switch_list_tile.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/auth/application/combined_auth_provider.dart';
+import 'package:goronyan/features/auth/application/combined_auth_state.dart';
+import 'package:goronyan/features/quiz/application/quiz_state_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class QuizPage extends ConsumerWidget {

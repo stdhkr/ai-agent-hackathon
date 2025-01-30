@@ -1,11 +1,11 @@
-import 'package:chat_app/config/providers/firebase_providers.dart';
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/data/logger/logger.dart';
-import 'package:chat_app/features/auth/data/repositories/app_user_repository_provider.dart';
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
-import 'package:chat_app/features/profile/application/app_user_form_state.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:goronyan/config/providers/firebase_providers.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
+import 'package:goronyan/features/auth/data/repositories/app_user_repository_provider.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
+import 'package:goronyan/features/profile/application/app_user_form_state.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_user_form_provider.g.dart';

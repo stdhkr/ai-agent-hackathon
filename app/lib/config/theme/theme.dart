@@ -1,7 +1,7 @@
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/extensions/color_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/extensions/color_extensions.dart';
 
 final theme = ThemeData(
   scaffoldBackgroundColor: AppColors.background,

@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:chat_app/core/presentation/widgets/typographies/label.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/presentation/widgets/typographies/label.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 
 class MnemonicCard extends StatelessWidget {
   const MnemonicCard({

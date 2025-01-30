@@ -1,6 +1,6 @@
-import 'package:chat_app/core/presentation/widgets/layouts/async_error_widget.dart';
-import 'package:chat_app/core/presentation/widgets/layouts/wrap_scaffold.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/presentation/widgets/layouts/async_error_widget.dart';
+import 'package:goronyan/core/presentation/widgets/layouts/wrap_scaffold.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AsyncValueBuilder<T> extends StatelessWidget {

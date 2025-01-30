@@ -1,11 +1,11 @@
-import 'package:chat_app/config/router/router.dart';
-import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
-import 'package:chat_app/core/presentation/widgets/cards/mnemonic_card.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/generate/application/re_generate_provider.dart';
-import 'package:chat_app/features/generate/presentation/widgets/generate_loading.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/router/router.dart';
+import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
+import 'package:goronyan/core/presentation/widgets/cards/mnemonic_card.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/generate/application/re_generate_provider.dart';
+import 'package:goronyan/features/generate/presentation/widgets/generate_loading.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class GeneratedResultPage extends ConsumerWidget {

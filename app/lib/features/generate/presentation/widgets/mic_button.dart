@@ -1,10 +1,10 @@
 import 'dart:math' show pi;
 
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/generate/presentation/widgets/recording_effect.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/generate/presentation/widgets/recording_effect.dart';
 
 class MicButton extends HookWidget {
   const MicButton({

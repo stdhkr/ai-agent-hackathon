@@ -1,9 +1,9 @@
-import 'package:chat_app/config/providers/firebase_providers.dart';
-import 'package:chat_app/core/data/logger/logger.dart';
-import 'package:chat_app/features/mnemonics/application/mnemonics_state.dart';
-import 'package:chat_app/features/mnemonics/data/repositories/mnemonics_repository_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:goronyan/config/providers/firebase_providers.dart';
+import 'package:goronyan/core/data/logger/logger.dart';
+import 'package:goronyan/features/mnemonics/application/mnemonics_state.dart';
+import 'package:goronyan/features/mnemonics/data/repositories/mnemonics_repository_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'mnemonics_provider.g.dart';

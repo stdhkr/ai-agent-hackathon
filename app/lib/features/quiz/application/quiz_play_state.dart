@@ -1,5 +1,5 @@
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
 
 part 'quiz_play_state.freezed.dart';
 part 'quiz_play_state.g.dart';

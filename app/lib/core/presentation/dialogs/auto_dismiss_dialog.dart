@@ -1,5 +1,5 @@
-import 'package:chat_app/core/extensions/string_extensions.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/extensions/string_extensions.dart';
 
 Future<void> showAutoDismissDialog(
   BuildContext context, {

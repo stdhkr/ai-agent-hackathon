@@ -1,8 +1,8 @@
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/widgets/modals/level_up_modal.dart';
-import 'package:chat_app/features/auth/application/app_user_provider.dart';
-import 'package:chat_app/features/auth/domain/entities/app_user.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/widgets/modals/level_up_modal.dart';
+import 'package:goronyan/features/auth/application/app_user_provider.dart';
+import 'package:goronyan/features/auth/domain/entities/app_user.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class LevelUpListener extends ConsumerWidget {

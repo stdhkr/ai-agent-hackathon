@@ -1,9 +1,7 @@
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/data/converters/timestamp_converter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-export 'package:chat_app/core/extensions/firestore_extensions.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/data/converters/timestamp_converter.dart';
 
 part 'app_user.freezed.dart';
 part 'app_user.g.dart';

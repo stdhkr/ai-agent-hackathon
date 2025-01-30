@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic_detail_page_extra.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic_detail_page_extra.dart';
 
 class ExtraCodec extends Codec<Object?, Object?> {
   const ExtraCodec();

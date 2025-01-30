@@ -1,5 +1,5 @@
-import 'package:chat_app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
 
 class Label extends StatelessWidget {
   const Label({

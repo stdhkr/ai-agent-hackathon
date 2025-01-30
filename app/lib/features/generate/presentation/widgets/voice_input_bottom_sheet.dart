@@ -1,11 +1,11 @@
-import 'package:chat_app/config/router/router.dart';
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/features/generate/application/voice_input_providers.dart';
-import 'package:chat_app/features/generate/application/voice_input_state.dart';
-import 'package:chat_app/features/generate/presentation/widgets/generate_loading.dart';
-import 'package:chat_app/features/generate/presentation/widgets/mic_button.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/config/router/router.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/features/generate/application/voice_input_providers.dart';
+import 'package:goronyan/features/generate/application/voice_input_state.dart';
+import 'package:goronyan/features/generate/presentation/widgets/generate_loading.dart';
+import 'package:goronyan/features/generate/presentation/widgets/mic_button.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class VoiceInputBottomSheet extends ConsumerWidget {

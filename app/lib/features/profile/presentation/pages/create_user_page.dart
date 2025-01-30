@@ -1,14 +1,14 @@
-import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/dialogs/auto_dismiss_dialog.dart';
-import 'package:chat_app/core/presentation/keyboard/keyboard_visibility.dart';
-import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
-import 'package:chat_app/core/presentation/widgets/indicators/cat_level_slider.dart';
-import 'package:chat_app/core/presentation/widgets/layouts/unfocus_layout.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offsets.dart';
-import 'package:chat_app/features/auth/application/combined_auth_provider.dart';
-import 'package:chat_app/features/profile/application/app_user_form_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:goronyan/core/constants/constants.dart';
+import 'package:goronyan/core/presentation/dialogs/auto_dismiss_dialog.dart';
+import 'package:goronyan/core/presentation/keyboard/keyboard_visibility.dart';
+import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
+import 'package:goronyan/core/presentation/widgets/indicators/cat_level_slider.dart';
+import 'package:goronyan/core/presentation/widgets/layouts/unfocus_layout.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
+import 'package:goronyan/features/auth/application/combined_auth_provider.dart';
+import 'package:goronyan/features/profile/application/app_user_form_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class CreateUserPage extends HookConsumerWidget {

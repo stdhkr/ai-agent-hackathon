@@ -1,6 +1,6 @@
-import 'package:chat_app/core/constants/app_colors.dart';
-import 'package:chat_app/core/presentation/widgets/offsets/offset_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:goronyan/core/constants/app_colors.dart';
+import 'package:goronyan/core/presentation/widgets/offsets/offset_theme.dart';
 
 const grayOffsetTheme = OffsetTheme(
   offsetColor: AppColors.backgroundGray,

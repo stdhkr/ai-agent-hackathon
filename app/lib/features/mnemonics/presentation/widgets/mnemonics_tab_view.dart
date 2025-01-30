@@ -1,11 +1,11 @@
-import 'package:chat_app/config/router/app_routes.dart';
-import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
-import 'package:chat_app/core/presentation/widgets/cards/mnemonic_list_card.dart';
-import 'package:chat_app/features/mnemonics/application/mnemonics_provider.dart';
-import 'package:chat_app/features/mnemonics/application/mnemonics_state.dart';
-import 'package:chat_app/features/mnemonics/domain/entities/mnemonic_detail_page_extra.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:goronyan/config/router/app_routes.dart';
+import 'package:goronyan/core/presentation/widgets/builder/async_value_builder.dart';
+import 'package:goronyan/core/presentation/widgets/cards/mnemonic_list_card.dart';
+import 'package:goronyan/features/mnemonics/application/mnemonics_provider.dart';
+import 'package:goronyan/features/mnemonics/application/mnemonics_state.dart';
+import 'package:goronyan/features/mnemonics/domain/entities/mnemonic_detail_page_extra.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MnemonicsTabView extends HookConsumerWidget {

@@ -81,7 +81,7 @@ class SettingsPage extends ConsumerWidget {
                 ),
               ),
               const SizedBox(height: 32),
-              labelWidget('Preferences'),
+              labelWidget('Account'),
               const SizedBox(height: 16),
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),

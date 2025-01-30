@@ -1,17 +1,7 @@
-## Firebase
+# Goroにゃーん
 
-Firestoreルールデプロイ
-```bash
-firebase deploy --only firestore:rules
-```
-
-Storageルールデプロイ
-```bash
-firebase deploy --only storage:rules
-```
-
-Cloud Functionsデプロイ
-```bash
-firebase deploy --only functions:api
-firebase deploy --only functions:onUserXpChange
+開発版Flutterアプリ起動
+```shell
+cd app
+flutter run --dart-define-from-file=dart_defines/dev.env
 ```

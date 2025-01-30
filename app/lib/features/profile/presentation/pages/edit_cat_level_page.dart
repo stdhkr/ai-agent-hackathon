@@ -1,5 +1,5 @@
 import 'package:chat_app/core/constants/constants.dart';
-import 'package:chat_app/core/presentation/dialogs/dialog.dart';
+import 'package:chat_app/core/presentation/dialogs/auto_dismiss_dialog.dart';
 import 'package:chat_app/core/presentation/widgets/bars/fixed_bottom_bar.dart';
 import 'package:chat_app/core/presentation/widgets/builder/async_value_builder.dart';
 import 'package:chat_app/core/presentation/widgets/indicators/cat_level_slider.dart';

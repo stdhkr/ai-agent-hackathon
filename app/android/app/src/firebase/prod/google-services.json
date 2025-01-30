@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1005658646293",
+    "project_id": "hackathon2024-4cb8e",
+    "storage_bucket": "hackathon2024-4cb8e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005658646293:android:39031e56f12b3ebb312b1c",
+        "android_client_info": {
+          "package_name": "com.goronyan.goronyan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005658646293-3ampka7v3mt5ee0pg7e7k281cnprnoip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi38T55t7rWs9tmKEcUaBAlQNX29EiJdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005658646293-3ampka7v3mt5ee0pg7e7k281cnprnoip.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1005658646293-0fpp68ugq06jtcffuuduuvusaks6td19.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goronyan.goronyan"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

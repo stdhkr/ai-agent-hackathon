@@ -230,7 +230,7 @@ class GenerateRepository {
     try {
       final dio = Dio();
       final response = await dio.post<Map<String, dynamic>>(
-        '$apiBaseUrl/generate-mnemonic',
+        '$apiBaseUrl/api/generate-mnemonic',
         data: {
           'audioPath': audioPath,
           'catLevel': catLevel,

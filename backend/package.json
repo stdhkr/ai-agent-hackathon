@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "biome lint ./src/",
+    "format": "biome format --write ./src/",
+    "check": "biome check --write ./src/"
+  },
+  "dependencies": {
+    "@genkit-ai/firebase": "^0.9.12",
+    "@genkit-ai/vertexai": "^0.9.12",
+    "@hono/node-server": "^1.13.8",
+    "firebase-admin": "^13.0.2",
+    "hono": "^4.6.20"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,23 +1,5 @@
 import { Timestamp } from "firebase-admin/firestore";
-import { z } from "genkit";
-
-export const AnswerDivisionSchema = z.object({
-	question: z.string(),
-	answer: z.string(),
-});
-
-export const InterestsSchema = AnswerDivisionSchema.extend({
-	interests: z.string(),
-});
-
-export const GoroSchema = AnswerDivisionSchema.extend({
-	catLevel: z.number(),
-});
-
-export const MeaningSchema = z.object({
-	japanese: z.string(),
-	english: z.string(),
-});
+import { z } from "zod";
 
 export const UserSchema = z.object({
 	avatarURL: z.string(),
@@ -38,7 +20,3 @@ export const AvatarSchema = z.object({
 	createdAt: z.instanceof(Timestamp),
 	updatedAt: z.instanceof(Timestamp),
 });
-
-export type AnswerDivision = z.infer<typeof AnswerDivisionSchema>;
-export type Meaning = z.infer<typeof MeaningSchema>;
-export type Goro = z.infer<typeof GoroSchema>;

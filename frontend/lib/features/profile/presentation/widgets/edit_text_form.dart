@@ -11,6 +11,7 @@ class EditTextForm extends HookConsumerWidget {
     this.validator,
     required this.label,
     required this.hint,
+    this.helper,
   });
 
   final String originalText;
@@ -19,6 +20,7 @@ class EditTextForm extends HookConsumerWidget {
   final String? Function(String?)? validator;
   final String label;
   final String hint;
+  final String? helper;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -38,6 +40,7 @@ class EditTextForm extends HookConsumerWidget {
               decoration: InputDecoration(
                 labelText: label,
                 hintText: hint,
+                helperText: helper,
               ),
               validator: validator,
               onChanged: onChanged,

@@ -176,6 +176,10 @@ final theme = ThemeData(
       fontSize: 14,
       color: AppColors.subColor,
     ),
+    helperStyle: GoogleFonts.sawarabiGothic(
+      fontSize: 12,
+      color: AppColors.textLightDark,
+    ),
     contentPadding: const EdgeInsets.symmetric(
       horizontal: 16,
       vertical: 10,

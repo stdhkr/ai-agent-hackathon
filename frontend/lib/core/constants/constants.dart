@@ -21,3 +21,5 @@ const tabBarHeight = 40.0;
 
 const catLevelDescription =
     '上にするほど、よりふざけた語呂を作れるにゃ。\nMaxにすると、もはや語呂ではなくなるにゃ🐈🐈🐈';
+
+const interestsText = '興味に関連するものを生成できるようになるにゃ🐈';

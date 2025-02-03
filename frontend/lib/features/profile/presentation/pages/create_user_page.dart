@@ -80,28 +80,38 @@ class CreateUserPage extends HookConsumerWidget {
                     decoration: const InputDecoration(
                       labelText: '趣味、興味',
                       hintText: '例: 旅行、読書、映画鑑賞',
+                      helperText: interestsText,
                     ),
                     onChanged: notifier.onChangedInterests,
                   ),
                   const SizedBox(height: 32),
-                  Text(
-                    'にゃーん度',
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      'にゃーん度',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    catLevelDescription,
-                    style: theme.textTheme.bodySmall,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      catLevelDescription,
+                      style: theme.textTheme.bodySmall,
+                    ),
                   ),
                   const SizedBox(height: 4),
                   Visibility(
                     visible: !isKeyboardVisibility,
                     child: Expanded(
-                      child: CatLevelSlider(
-                        value: value?.catLevel ?? defaultCatLevel,
-                        onChanged: notifier.onChangedCatLevel,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
+                        child: CatLevelSlider(
+                          value: value?.catLevel ?? defaultCatLevel,
+                          onChanged: notifier.onChangedCatLevel,
+                        ),
                       ),
                     ),
                   ),

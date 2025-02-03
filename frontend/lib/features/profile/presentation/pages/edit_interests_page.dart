@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
+import 'package:goronyan/core/constants/constants.dart';
 import 'package:goronyan/core/presentation/dialogs/auto_dismiss_dialog.dart';
 import 'package:goronyan/core/presentation/keyboard/keyboard.dart';
 import 'package:goronyan/core/presentation/widgets/bars/fixed_bottom_bar.dart';
@@ -69,6 +70,7 @@ class EditInterestsPage extends HookConsumerWidget {
                 onChanged: notifier.onChangedInterests,
                 label: '趣味、興味',
                 hint: '例: 旅行、読書、映画鑑賞',
+                helper: interestsText,
               ),
             ),
           );

@@ -9,6 +9,7 @@ import 'package:goronyan/core/presentation/widgets/layouts/unfocus_layout.dart';
 import 'package:goronyan/core/presentation/widgets/offsets/offsets.dart';
 import 'package:goronyan/features/auth/application/combined_auth_provider.dart';
 import 'package:goronyan/features/profile/application/app_user_form_provider.dart';
+import 'package:goronyan/features/profile/presentation/widgets/edit_text_form.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class CreateUserPage extends HookConsumerWidget {
@@ -24,7 +25,6 @@ class CreateUserPage extends HookConsumerWidget {
     final notifier = ref.read(appUserFormProvider.notifier);
     final value = asyncValue.value;
     final formKey = useMemoized(GlobalKey<FormState>.new, const []);
-    final interestsController = useTextEditingController();
     final isLoading = asyncValue.isLoading;
 
     Future<void> onSubmit() async {
@@ -65,59 +65,55 @@ class CreateUserPage extends HookConsumerWidget {
               ),
             ],
           ),
-          body: Form(
-            key: formKey,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  const SizedBox(height: 8),
-                  TextFormField(
-                    // autofocus: true,
-                    controller: interestsController,
-                    keyboardType: TextInputType.text,
-                    decoration: const InputDecoration(
-                      labelText: '趣味、興味',
-                      hintText: '例: 旅行、読書、映画鑑賞',
-                      helperText: interestsText,
-                    ),
-                    onChanged: notifier.onChangedInterests,
-                  ),
-                  const SizedBox(height: 32),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Text(
-                      'にゃーん度',
-                      style: theme.textTheme.bodyMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Text(
-                      catLevelDescription,
-                      style: theme.textTheme.bodySmall,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Visibility(
-                    visible: !isKeyboardVisibility,
-                    child: Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: CatLevelSlider(
-                          value: value?.catLevel ?? defaultCatLevel,
-                          onChanged: notifier.onChangedCatLevel,
+          body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const SizedBox(height: 8),
+              EditTextForm(
+                originalText: '',
+                formKey: formKey,
+                onChanged: notifier.onChangedInterests,
+                label: '趣味、興味',
+                hint: '例: 旅行、読書、映画鑑賞',
+                helper: interestsText,
+              ),
+              const SizedBox(height: 32),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 32),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'にゃーん度',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
-                    ),
+                      const SizedBox(height: 4),
+                      Text(
+                        catLevelDescription,
+                        style: theme.textTheme.bodySmall,
+                      ),
+                      const SizedBox(height: 4),
+                      Visibility(
+                        visible: !isKeyboardVisibility,
+                        child: Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            child: CatLevelSlider(
+                              value: value?.catLevel ?? defaultCatLevel,
+                              onChanged: notifier.onChangedCatLevel,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
+            ],
           ),
         ),
       ),

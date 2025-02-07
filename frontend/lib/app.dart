@@ -14,6 +14,7 @@ class App extends ConsumerWidget {
 
     return LevelUpListener(
       child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
         routeInformationParser: router.routeInformationParser,
         routerDelegate: router.routerDelegate,
         routeInformationProvider: router.routeInformationProvider,

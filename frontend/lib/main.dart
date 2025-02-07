@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:goronyan/config/environment/firebase_initializer.dart';
 import 'package:goronyan/core/constants/constants.dart';
 import 'package:goronyan/core/data/logger/logger.dart';
@@ -25,6 +26,10 @@ Future<void> main() async {
     ..d('buildNumber: $buildNumber');
 
   await initializeFirebaseApp();
+
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
 
   runApp(
     const ProviderScope(

@@ -9,7 +9,7 @@ final rootNavigatorKey = GlobalKey<NavigatorState>();
 const catLevelTexts = [
   '真面目',
   '普通',
-  'はっちゃけ度MAX',
+  'Max',
 ];
 
 const defaultCatLevel = 2.0;

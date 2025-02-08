@@ -13,6 +13,10 @@ export const GoroSchema = AnswerDivisionSchema.extend({
 	catLevel: z.number(),
 });
 
+export const GoroOutputSchema = z.object({
+	goroTexts: z.array(z.string()),
+});
+
 export const MeaningSchema = z.object({
 	japanese: z.string(),
 	english: z.string(),

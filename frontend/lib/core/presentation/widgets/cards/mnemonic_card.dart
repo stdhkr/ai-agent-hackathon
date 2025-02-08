@@ -72,12 +72,14 @@ class MnemonicCard extends StatelessWidget {
               const SizedBox(height: 16),
               const Label(text: '語呂合わせ'),
               const SizedBox(height: 4),
-              Text(
-                mnemonic.goroText,
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              ...mnemonic.goroTexts.map((text) {
+                return Text(
+                  text,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                );
+              }),
               const SizedBox(height: 16),
             ],
           ),

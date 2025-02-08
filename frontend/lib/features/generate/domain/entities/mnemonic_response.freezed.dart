@@ -24,7 +24,7 @@ mixin _$MnemonicResponse {
   String get answer => throw _privateConstructorUsedError;
   String get meaning => throw _privateConstructorUsedError;
   String get episode => throw _privateConstructorUsedError;
-  String get goroText => throw _privateConstructorUsedError;
+  List<String> get goroTexts => throw _privateConstructorUsedError;
   String get imagePath => throw _privateConstructorUsedError;
 
   /// Serializes this MnemonicResponse to a JSON map.
@@ -48,7 +48,7 @@ abstract class $MnemonicResponseCopyWith<$Res> {
       String answer,
       String meaning,
       String episode,
-      String goroText,
+      List<String> goroTexts,
       String imagePath});
 }
 
@@ -71,7 +71,7 @@ class _$MnemonicResponseCopyWithImpl<$Res, $Val extends MnemonicResponse>
     Object? answer = null,
     Object? meaning = null,
     Object? episode = null,
-    Object? goroText = null,
+    Object? goroTexts = null,
     Object? imagePath = null,
   }) {
     return _then(_value.copyWith(
@@ -91,10 +91,10 @@ class _$MnemonicResponseCopyWithImpl<$Res, $Val extends MnemonicResponse>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String,
-      goroText: null == goroText
-          ? _value.goroText
-          : goroText // ignore: cast_nullable_to_non_nullable
-              as String,
+      goroTexts: null == goroTexts
+          ? _value.goroTexts
+          : goroTexts // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       imagePath: null == imagePath
           ? _value.imagePath
           : imagePath // ignore: cast_nullable_to_non_nullable
@@ -116,7 +116,7 @@ abstract class _$$MnemonicResponseImplCopyWith<$Res>
       String answer,
       String meaning,
       String episode,
-      String goroText,
+      List<String> goroTexts,
       String imagePath});
 }
 
@@ -137,7 +137,7 @@ class __$$MnemonicResponseImplCopyWithImpl<$Res>
     Object? answer = null,
     Object? meaning = null,
     Object? episode = null,
-    Object? goroText = null,
+    Object? goroTexts = null,
     Object? imagePath = null,
   }) {
     return _then(_$MnemonicResponseImpl(
@@ -157,10 +157,10 @@ class __$$MnemonicResponseImplCopyWithImpl<$Res>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String,
-      goroText: null == goroText
-          ? _value.goroText
-          : goroText // ignore: cast_nullable_to_non_nullable
-              as String,
+      goroTexts: null == goroTexts
+          ? _value._goroTexts
+          : goroTexts // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       imagePath: null == imagePath
           ? _value.imagePath
           : imagePath // ignore: cast_nullable_to_non_nullable
@@ -177,8 +177,9 @@ class _$MnemonicResponseImpl implements _MnemonicResponse {
       required this.answer,
       required this.meaning,
       required this.episode,
-      required this.goroText,
-      required this.imagePath});
+      required final List<String> goroTexts,
+      required this.imagePath})
+      : _goroTexts = goroTexts;
 
   factory _$MnemonicResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$MnemonicResponseImplFromJson(json);
@@ -191,14 +192,20 @@ class _$MnemonicResponseImpl implements _MnemonicResponse {
   final String meaning;
   @override
   final String episode;
+  final List<String> _goroTexts;
   @override
-  final String goroText;
+  List<String> get goroTexts {
+    if (_goroTexts is EqualUnmodifiableListView) return _goroTexts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_goroTexts);
+  }
+
   @override
   final String imagePath;
 
   @override
   String toString() {
-    return 'MnemonicResponse(question: $question, answer: $answer, meaning: $meaning, episode: $episode, goroText: $goroText, imagePath: $imagePath)';
+    return 'MnemonicResponse(question: $question, answer: $answer, meaning: $meaning, episode: $episode, goroTexts: $goroTexts, imagePath: $imagePath)';
   }
 
   @override
@@ -211,16 +218,16 @@ class _$MnemonicResponseImpl implements _MnemonicResponse {
             (identical(other.answer, answer) || other.answer == answer) &&
             (identical(other.meaning, meaning) || other.meaning == meaning) &&
             (identical(other.episode, episode) || other.episode == episode) &&
-            (identical(other.goroText, goroText) ||
-                other.goroText == goroText) &&
+            const DeepCollectionEquality()
+                .equals(other._goroTexts, _goroTexts) &&
             (identical(other.imagePath, imagePath) ||
                 other.imagePath == imagePath));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, question, answer, meaning, episode, goroText, imagePath);
+  int get hashCode => Object.hash(runtimeType, question, answer, meaning,
+      episode, const DeepCollectionEquality().hash(_goroTexts), imagePath);
 
   /// Create a copy of MnemonicResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -245,7 +252,7 @@ abstract class _MnemonicResponse implements MnemonicResponse {
       required final String answer,
       required final String meaning,
       required final String episode,
-      required final String goroText,
+      required final List<String> goroTexts,
       required final String imagePath}) = _$MnemonicResponseImpl;
 
   factory _MnemonicResponse.fromJson(Map<String, dynamic> json) =
@@ -260,7 +267,7 @@ abstract class _MnemonicResponse implements MnemonicResponse {
   @override
   String get episode;
   @override
-  String get goroText;
+  List<String> get goroTexts;
   @override
   String get imagePath;
 

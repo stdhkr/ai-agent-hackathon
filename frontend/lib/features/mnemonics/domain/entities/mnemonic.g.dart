@@ -13,7 +13,10 @@ _$MnemonicImpl _$$MnemonicImplFromJson(Map<String, dynamic> json) =>
       answer: json['answer'] as String? ?? '',
       meaning: json['meaning'] as String? ?? '',
       episode: json['episode'] as String? ?? '',
-      goroText: json['goroText'] as String? ?? '',
+      goroTexts: (json['goroTexts'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const <String>[],
       voicePath: json['voicePath'] as String?,
       questionImagePath: json['questionImagePath'] as String?,
       outputImagePath: json['outputImagePath'] as String?,
@@ -35,7 +38,7 @@ Map<String, dynamic> _$$MnemonicImplToJson(_$MnemonicImpl instance) =>
       'answer': instance.answer,
       'meaning': instance.meaning,
       'episode': instance.episode,
-      'goroText': instance.goroText,
+      'goroTexts': instance.goroTexts,
       'voicePath': instance.voicePath,
       'questionImagePath': instance.questionImagePath,
       'outputImagePath': instance.outputImagePath,

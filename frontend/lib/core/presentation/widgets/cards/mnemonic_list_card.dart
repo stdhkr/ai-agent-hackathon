@@ -20,23 +20,23 @@ class MnemonicListCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final totalMemorizedCount =
+        mnemonic.memorizedCount + mnemonic.unmemorizedCount;
 
     return Column(
       children: [
         ListTile(
           onTap: onTap,
           leading: Visibility(
-            visible: mnemonic.lastMemorized,
+            visible: totalMemorizedCount > 0,
             maintainSize: true,
             maintainAnimation: true,
             maintainState: true,
-            child: const CircleAvatar(
-              radius: 12,
-              backgroundColor: AppColors.subColor,
-              child: Icon(
-                Icons.check,
-                color: AppColors.background,
-                size: 16,
+            child: Text(
+              '${mnemonic.memorizedCount}/$totalMemorizedCount',
+              overflow: TextOverflow.ellipsis,
+              style: theme.textTheme.titleSmall?.copyWith(
+                color: AppColors.textLightDark,
               ),
             ),
           ),

@@ -12,6 +12,7 @@ class AsyncValueBuilder<T> extends StatelessWidget {
     this.loadingWidget,
     this.isWrapScaffoldLoading = false,
     this.isWrapScaffoldError = false,
+    this.isErrorHomeButton = true,
     this.onReload,
   });
 
@@ -21,6 +22,7 @@ class AsyncValueBuilder<T> extends StatelessWidget {
   final Widget? loadingWidget;
   final bool isWrapScaffoldLoading;
   final bool isWrapScaffoldError;
+  final bool isErrorHomeButton;
   final void Function()? onReload;
 
   @override
@@ -31,7 +33,12 @@ class AsyncValueBuilder<T> extends StatelessWidget {
           ? errorBuilder!(e, st)
           : WrapScaffold(
               isWrap: isWrapScaffoldError,
-              child: AsyncErrorWidget(e: e, st: st, onReload: onReload),
+              child: AsyncErrorWidget(
+                e: e,
+                st: st,
+                isHomeButton: isErrorHomeButton,
+                onReload: onReload,
+              ),
             ),
       _ => loadingWidget ??
           WrapScaffold(

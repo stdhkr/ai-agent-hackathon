@@ -13,7 +13,8 @@ _$MnemonicResponseImpl _$$MnemonicResponseImplFromJson(
       answer: json['answer'] as String,
       meaning: json['meaning'] as String,
       episode: json['episode'] as String,
-      goroText: json['goroText'] as String,
+      goroTexts:
+          (json['goroTexts'] as List<dynamic>).map((e) => e as String).toList(),
       imagePath: json['imagePath'] as String,
     );
 
@@ -24,6 +25,6 @@ Map<String, dynamic> _$$MnemonicResponseImplToJson(
       'answer': instance.answer,
       'meaning': instance.meaning,
       'episode': instance.episode,
-      'goroText': instance.goroText,
+      'goroTexts': instance.goroTexts,
       'imagePath': instance.imagePath,
     };

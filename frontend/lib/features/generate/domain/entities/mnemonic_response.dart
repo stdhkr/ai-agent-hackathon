@@ -10,7 +10,7 @@ class MnemonicResponse with _$MnemonicResponse {
     required String answer,
     required String meaning,
     required String episode,
-    required String goroText,
+    required List<String> goroTexts,
     required String imagePath,
   }) = _MnemonicResponse;
 

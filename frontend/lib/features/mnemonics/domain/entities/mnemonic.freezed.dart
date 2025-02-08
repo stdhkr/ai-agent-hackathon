@@ -25,7 +25,7 @@ mixin _$Mnemonic {
   String get answer => throw _privateConstructorUsedError;
   String get meaning => throw _privateConstructorUsedError;
   String get episode => throw _privateConstructorUsedError;
-  String get goroText => throw _privateConstructorUsedError;
+  List<String> get goroTexts => throw _privateConstructorUsedError;
   String? get voicePath => throw _privateConstructorUsedError;
   String? get questionImagePath => throw _privateConstructorUsedError;
   String? get outputImagePath => throw _privateConstructorUsedError;
@@ -60,7 +60,7 @@ abstract class $MnemonicCopyWith<$Res> {
       String answer,
       String meaning,
       String episode,
-      String goroText,
+      List<String> goroTexts,
       String? voicePath,
       String? questionImagePath,
       String? outputImagePath,
@@ -92,7 +92,7 @@ class _$MnemonicCopyWithImpl<$Res, $Val extends Mnemonic>
     Object? answer = null,
     Object? meaning = null,
     Object? episode = null,
-    Object? goroText = null,
+    Object? goroTexts = null,
     Object? voicePath = freezed,
     Object? questionImagePath = freezed,
     Object? outputImagePath = freezed,
@@ -124,10 +124,10 @@ class _$MnemonicCopyWithImpl<$Res, $Val extends Mnemonic>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String,
-      goroText: null == goroText
-          ? _value.goroText
-          : goroText // ignore: cast_nullable_to_non_nullable
-              as String,
+      goroTexts: null == goroTexts
+          ? _value.goroTexts
+          : goroTexts // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       voicePath: freezed == voicePath
           ? _value.voicePath
           : voicePath // ignore: cast_nullable_to_non_nullable
@@ -182,7 +182,7 @@ abstract class _$$MnemonicImplCopyWith<$Res>
       String answer,
       String meaning,
       String episode,
-      String goroText,
+      List<String> goroTexts,
       String? voicePath,
       String? questionImagePath,
       String? outputImagePath,
@@ -212,7 +212,7 @@ class __$$MnemonicImplCopyWithImpl<$Res>
     Object? answer = null,
     Object? meaning = null,
     Object? episode = null,
-    Object? goroText = null,
+    Object? goroTexts = null,
     Object? voicePath = freezed,
     Object? questionImagePath = freezed,
     Object? outputImagePath = freezed,
@@ -244,10 +244,10 @@ class __$$MnemonicImplCopyWithImpl<$Res>
           ? _value.episode
           : episode // ignore: cast_nullable_to_non_nullable
               as String,
-      goroText: null == goroText
-          ? _value.goroText
-          : goroText // ignore: cast_nullable_to_non_nullable
-              as String,
+      goroTexts: null == goroTexts
+          ? _value._goroTexts
+          : goroTexts // ignore: cast_nullable_to_non_nullable
+              as List<String>,
       voicePath: freezed == voicePath
           ? _value.voicePath
           : voicePath // ignore: cast_nullable_to_non_nullable
@@ -297,7 +297,7 @@ class _$MnemonicImpl extends _Mnemonic {
       this.answer = '',
       this.meaning = '',
       this.episode = '',
-      this.goroText = '',
+      final List<String> goroTexts = const <String>[],
       this.voicePath,
       this.questionImagePath,
       this.outputImagePath,
@@ -307,7 +307,8 @@ class _$MnemonicImpl extends _Mnemonic {
       @TimestampConverter() required this.lastQuizAt,
       @TimestampConverter() required this.createdAt,
       @TimestampConverter() required this.updatedAt})
-      : super._();
+      : _goroTexts = goroTexts,
+        super._();
 
   factory _$MnemonicImpl.fromJson(Map<String, dynamic> json) =>
       _$$MnemonicImplFromJson(json);
@@ -325,9 +326,15 @@ class _$MnemonicImpl extends _Mnemonic {
   @override
   @JsonKey()
   final String episode;
+  final List<String> _goroTexts;
   @override
   @JsonKey()
-  final String goroText;
+  List<String> get goroTexts {
+    if (_goroTexts is EqualUnmodifiableListView) return _goroTexts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_goroTexts);
+  }
+
   @override
   final String? voicePath;
   @override
@@ -355,7 +362,7 @@ class _$MnemonicImpl extends _Mnemonic {
 
   @override
   String toString() {
-    return 'Mnemonic(id: $id, question: $question, answer: $answer, meaning: $meaning, episode: $episode, goroText: $goroText, voicePath: $voicePath, questionImagePath: $questionImagePath, outputImagePath: $outputImagePath, memorizedCount: $memorizedCount, unmemorizedCount: $unmemorizedCount, lastMemorized: $lastMemorized, lastQuizAt: $lastQuizAt, createdAt: $createdAt, updatedAt: $updatedAt)';
+    return 'Mnemonic(id: $id, question: $question, answer: $answer, meaning: $meaning, episode: $episode, goroTexts: $goroTexts, voicePath: $voicePath, questionImagePath: $questionImagePath, outputImagePath: $outputImagePath, memorizedCount: $memorizedCount, unmemorizedCount: $unmemorizedCount, lastMemorized: $lastMemorized, lastQuizAt: $lastQuizAt, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -369,8 +376,8 @@ class _$MnemonicImpl extends _Mnemonic {
             (identical(other.answer, answer) || other.answer == answer) &&
             (identical(other.meaning, meaning) || other.meaning == meaning) &&
             (identical(other.episode, episode) || other.episode == episode) &&
-            (identical(other.goroText, goroText) ||
-                other.goroText == goroText) &&
+            const DeepCollectionEquality()
+                .equals(other._goroTexts, _goroTexts) &&
             (identical(other.voicePath, voicePath) ||
                 other.voicePath == voicePath) &&
             (identical(other.questionImagePath, questionImagePath) ||
@@ -400,7 +407,7 @@ class _$MnemonicImpl extends _Mnemonic {
       answer,
       meaning,
       episode,
-      goroText,
+      const DeepCollectionEquality().hash(_goroTexts),
       voicePath,
       questionImagePath,
       outputImagePath,
@@ -434,7 +441,7 @@ abstract class _Mnemonic extends Mnemonic {
           final String answer,
           final String meaning,
           final String episode,
-          final String goroText,
+          final List<String> goroTexts,
           final String? voicePath,
           final String? questionImagePath,
           final String? outputImagePath,
@@ -461,7 +468,7 @@ abstract class _Mnemonic extends Mnemonic {
   @override
   String get episode;
   @override
-  String get goroText;
+  List<String> get goroTexts;
   @override
   String? get voicePath;
   @override

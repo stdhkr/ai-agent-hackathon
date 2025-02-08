@@ -32,6 +32,9 @@ class VoiceInputBottomSheet extends ConsumerWidget {
       if (Navigator.canPop(context)) {
         Navigator.pop(context);
       }
+      if (result == null) {
+        return;
+      }
       if (Navigator.canPop(context)) {
         Navigator.pop(context);
       }
@@ -41,6 +44,7 @@ class VoiceInputBottomSheet extends ConsumerWidget {
     return AsyncValueBuilder<VoiceInputState>(
       asyncValue: asyncValue,
       isWrapScaffoldError: true,
+      isErrorHomeButton: false,
       child: (data) {
         return SizedBox(
           width: double.infinity,

@@ -148,7 +148,7 @@ class GenerateRepository {
         'answer': newMnemonic.answer,
         'meaning': newMnemonic.meaning,
         'episode': newMnemonic.episode,
-        'goroText': newMnemonic.goroText,
+        'goroTexts': newMnemonic.goroTexts,
         'outputImagePath': newMnemonic.outputImagePath,
         'updatedAt': FieldValue.serverTimestamp(),
       });
@@ -196,7 +196,7 @@ class GenerateRepository {
         answer: generateResponse.answer,
         meaning: generateResponse.meaning,
         episode: generateResponse.episode,
-        goroText: generateResponse.goroText,
+        goroTexts: generateResponse.goroTexts,
         voicePath: prevMnemonic.voicePath,
         outputImagePath: generateResponse.imagePath,
         lastQuizAt: DateTime.now(),

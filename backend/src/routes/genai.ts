@@ -29,7 +29,7 @@ genaiRoute.post("/generate-mnemonic", async (c) => {
 		const userId = c.get("userId") as string | undefined;
 
 		if (!userId) {
-			return c.json({ error: "x-user-id is required." }, 400);
+			return c.json({ error: "userId is required." }, 400);
 		}
 		console.info("Received userId in Hono:", userId);
 
@@ -47,8 +47,8 @@ genaiRoute.post("/generate-mnemonic", async (c) => {
 			: null;
 		console.info("STEP3 (意味生成) response:", episode);
 
-		const goroText = await goroFlow({ question, answer, catLevel });
-		console.info("STEP4 (ゴロ生成) response:", goroText);
+		const goro = await goroFlow({ question, answer, catLevel });
+		console.info("STEP4 (ゴロ生成) response:", goro);
 
 		const { url, contentType } = await generateImageFlow(meaning.english);
 		console.info("STEP5 (画像生成) response:", url, contentType);
@@ -64,7 +64,7 @@ genaiRoute.post("/generate-mnemonic", async (c) => {
 				answer,
 				meaning: meaning.japanese,
 				episode,
-				goroText,
+				goroTexts: goro.goroTexts,
 				imagePath,
 			},
 			200,

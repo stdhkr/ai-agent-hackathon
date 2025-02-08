@@ -7,11 +7,13 @@ class AsyncErrorWidget extends StatelessWidget {
     super.key,
     required this.e,
     required this.st,
+    this.isHomeButton = true,
     this.onReload,
   });
 
   final Object e;
   final StackTrace? st;
+  final bool isHomeButton;
   final void Function()? onReload;
 
   @override
@@ -32,17 +34,19 @@ class AsyncErrorWidget extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyMedium,
           ),
-          const SizedBox(height: 32),
-          OffsetButton(
-            label: 'ホームに戻る',
-            onPressed: () {
-              if (onReload != null) {
-                onReload!();
-              } else {
-                const HomeRouteData().go(context);
-              }
-            },
-          ),
+          if (isHomeButton) ...[
+            const SizedBox(height: 32),
+            OffsetButton(
+              label: 'ホームに戻る',
+              onPressed: () {
+                if (onReload != null) {
+                  onReload!();
+                } else {
+                  const HomeRouteData().go(context);
+                }
+              },
+            ),
+          ],
         ],
       ),
     );

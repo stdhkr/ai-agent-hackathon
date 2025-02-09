@@ -39,3 +39,8 @@ dart_defines/prod.env
 ```shell
 flutter run --dart-define-from-file=dart_defines/dev.env
 ```
+
+APK ビルド
+```shell
+flutter build apk --dart-define-from-file=dart_defines/prod.env
+```

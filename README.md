@@ -11,3 +11,6 @@ dev Flutterアプリ起動
 cd app
 flutter run --dart-define-from-file=dart_defines/dev.env
 ```
+
+テスト用 Android APKファイル ダウンロードリンク
+https://drive.google.com/file/d/1WmMQ2sE4Dlb6BFXfnsKSTHMq3CG_oIwE/view?usp=sharing

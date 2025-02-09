@@ -95,16 +95,13 @@ class VoiceInput extends _$VoiceInput {
 
       final repository = ref.read(generateRepositoryProvider);
 
-      // final relativePath = await repository.uploadToFirebaseStorage(
-      //   filePath: path,
-      //   uid: user.uid,
-      // );
-      // if (relativePath == null) {
-      //   return null;
-      // }
-
-      final relativePath =
-          'voices/OjLSc17UhAhPb6LZ8s1evVedmS32/1738936364996.aac';
+      final relativePath = await repository.uploadToFirebaseStorage(
+        filePath: path,
+        uid: user.uid,
+      );
+      if (relativePath == null) {
+        return null;
+      }
 
       final generateResponse = await repository.postGenerateMnemonic(
         audioPath: relativePath,
